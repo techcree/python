@@ -1,0 +1,10 @@
+#Python by ssk 838375
+from decimal import *
+opi = int(input("Wie viele Stellen von Pi ausgeben? ")) 
+pi = 0
+getcontext().prec = opi
+ 
+for i in range(0,256):
+    pi += Decimal((4/(8*i+1) - 2/(8*i+4) - 1/(8*i+5) - 1/(8*i+6))/16**i)
+ 
+print(pi)
