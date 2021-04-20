@@ -1,54 +1,40 @@
 #Python by ssk 838375
-print("Python Taschenrechner")
+#Python Rechner für zwei Zahlen zur Berechnung mit Grundrechenarten
+
+print("Python Taschenrechner um 2 Zahlen zu berrechnen. Zahlen und Operator einzeln eingeben und mit Enter-Taste weiter...")
+
 
 while True:
-    
-  o = int(input("1 = +, 2 = -, 3 = *, 4 = /: "))
+        a = int(input("1. Zahl: "))
+        o = input("+, -, *, : ?")
+        b = int(input("2. Zahl: "))
 
-  if o == 1:
-      a = int(input("A eingeben: "))
-      print ("adieren mit")
-      b = int(input("B eingeben: "))
-      x = (a) + (b)
-      print ("")
-      print ("")
-      print ("Ergebnis ist ", x)
-      print ("")
-      print ("")
+        if o == "+":
+           x = (a) + (b)
+           print ("")
+           print ("Ergebnis ist ", x)
+           print ("")
     
-  if o == 2:
-      a = int(input("A eingeben: "))
-      print ("subtrahieren mit")
-      b = int(input("B eingeben: "))
-      x = (a) - (b)
-      print ("")
-      print ("")
-      print ("Ergebnis ist ", x)
-      print ("")
-      print ("")
+        if o == "-":
+           x = (a) - (b)
+           print ("")
+           print ("Ergebnis ist ", x)
+           print ("")
     
-  if o == 3:
-      a = int(input("A eingeben: "))
-      print ("multiplizieren mit")
-      b = int(input("B eingeben: "))
-      x = (a) * (b)
-      print ("")
-      print ("")
-      print ("Ergebnis ist ", x)
-      print ("")
-      print ("")
+        if o == "*":
+           x = (a) * (b)
+           print ("")
+           print ("Ergebnis ist ", x)
+           print ("")
     
-  if o == 4:
-      a = int(input("A eingeben: "))
-      print ("diffidieren mit")
-      b = int(input("B eingeben: "))
-      x = (a) / (b)
-      print ("")
-      print ("")
-      print ("Ergebnis ist ", x)
-      print ("")
-      print ("")
+        if o == "/":
+           x = (a) / (b)
+           print ("")
+           print ("Ergebnis ist ", x)
+           print ("")
   
-  print("Neue Berechnung*******")
-  print ("")
-  print ("")
+        print("Neue Berechnung*******")
+        print ("")
+  
+else:  
+    print("Falsche Eingabe")
